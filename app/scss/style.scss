@@ -1,7 +1,11 @@
 @import 'fonts';
 @import 'reset';
+@import 'libs';
+
 @import 'vars';
 @import 'global';
 
 
-@import 'media';
+@import 'lego/header';
+@import 'lego/hero';
+@import 'lego/hover';

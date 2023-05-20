@@ -32,6 +32,10 @@ dd {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 ul {
   list-style: none;
 }
@@ -41,12 +45,6 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: transparent;
-}
-
 input,
 button,
 textarea,
@@ -54,16 +52,6 @@ select {
   font: inherit;
 }
 
-input,
-textarea {
-  border: none;
-  outline: transparent;
-}
-
-button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  outline: transparent;
+a {
+  text-decoration: none;
 }
