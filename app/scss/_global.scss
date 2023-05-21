@@ -1,10 +1,27 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Rubik', sans-serif;
   font-style: 14px;
   font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.03em;
   color: $secondary;
   background-color: $light;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.logo {
+  display: block;
+  transition: outline 0.4s;
 }
 
 .container {
