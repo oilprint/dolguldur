@@ -1,0 +1,16 @@
+.services {
+  text-align: center;
+
+  &__section {
+    padding-top: 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
