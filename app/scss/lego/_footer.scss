@@ -8,7 +8,10 @@
   
   &__logo {
     margin-bottom: 22px;
-    display: block;
+  }
+
+  &__info {
+    font-style: normal;
   }
 
   &__contact:not(:last-child) {

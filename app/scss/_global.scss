@@ -21,6 +21,7 @@ main {
 
 .logo {
   display: block;
+  width: fit-content;
   transition: outline 0.4s;
 }
 
@@ -30,8 +31,19 @@ main {
   padding: 0 15px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .focus {
-  transition:color 0.4s, outline 0.4s;
+  transition: color 0.4s, outline 0.4s;
   &:focus {
     outline: solid 1px $accent;
     outline-offset: 4px;
