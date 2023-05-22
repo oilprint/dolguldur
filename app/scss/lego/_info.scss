@@ -1,0 +1,26 @@
+.info {
+  border-color: $light;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $grey-dark;
+    margin-bottom: 9px;
+  }
+}

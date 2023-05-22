@@ -1,0 +1,12 @@
+.team {
+  text-align: center;
+  background-color: $bg;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
