@@ -1,0 +1,37 @@
+.footer {
+  background-color: $primary;
+  padding: 64px 0 60px;
+  
+  &__logo {
+    margin-bottom: 22px;
+  }
+
+  &__info {
+    font-style: normal;
+  }
+
+  &__contact:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link-adress {
+    color: $light;
+    &:hover {
+      color: $accent;
+    }
+    &:active {
+      color: rgba($light, 0.6);
+    }
+  }
+
+  &__link {
+    color: $accent-second;
+    transition: color 0.4s, opacity 0.4s;
+    &:hover {
+      color: $accent;
+    }
+    &:active {
+      color: rgba($accent-second, 0.6);
+    }
+  }  
+}
