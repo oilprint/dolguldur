@@ -9,13 +9,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rubik:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
 
   <link rel="icon" href="favicon/favicon.ico" sizes="any">
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
+  <link rel="manifest" href="favicon/site.webmanifest/">
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -44,6 +44,7 @@
               Contacts
             </a>
           </li>
+
         </ul>
       </nav>
 
@@ -66,18 +67,16 @@
   </header>
 
   <main>
-
-    <h1 class="sr-only">
-      Digital Marketing Agency DolGuldur
-    </h1>
-
     <section class="hero">
       <div class="container hero__container">
 
         <div class="hero__content">
-          <h2 class="hero__title">
+          <h1 class="hero__title">
+            <span class="sr-only">
+              Digital Marketing Agency DolGuldur
+            </span>
             author's forge where your sites are created
-          </h2>
+          </h1>
           <button class="button" type="button">
             Go to order
           </button>
@@ -171,62 +170,66 @@
 
     <section class="team section">
       <div class="container">
-        <div class="team__inner">
-          <h2 class="title">
-            Our team
-          </h2>
-          <ul class="team__list">
-            <li class="team__item">
-              <article class="team-card">
-                <img class="team-card__img" src="images/team/designer.jpg" width="270" height="260"
-                  alt="Product Designer Paul Castanie">
-                <h3 class="team-card__title">
-                  Paul Castanie
-                </h3>
-                <p class="team-card__txt">
-                  Product Designer
-                </p>
-              </article>
-            </li>
-            <li class="team__item">
-              <article class="team-card">
-                <img class="team-card__img" src="images/team/developer.jpg" width="270" height="260"
-                  alt="Frontend Developer Joanna Nix">
-                <h3 class="team-card__title">
-                  Joanna Nix
-                </h3>
-                <p class="team-card__txt">
-                  Frontend Developer
-                </p>
-              </article>
-            </li>
-            <li class="team__item">
-              <article class="team-card">
-                <img class="team-card__img" src="images/team/marketing.jpg" width="270" height="260"
-                  alt="Marketing Aldo Delara">
-                <h3 class="team-card__title">
-                  Aldo Delara
-                </h3>
-                <p class="team-card__txt">
-                  Marketing
-                </p>
-              </article>
-            </li>
-            <li class="team__item">
-              <article class="team-card">
-                <img class="team-card__img" src="images/team/ui-designer.jpg" width="270" height="260"
-                  alt="UI Designer Oladimeji Odunsi">
-                <h3 class="team-card__title">
-                  Oladimeji Odunsi
-                </h3>
-                <p class="team-card__txt">
-                  UI Designer
-                </p>
-              </article>
-            </li>
-          </ul>
 
-        </div>
+        <h2 class="title">
+          Our team
+        </h2>
+
+        <ul class="team__list">
+          <li class="team__item">
+            <img class="team__img" src="images/team/designer.jpg" width="270" height="260"
+              alt="Product Designer Paul Castanie">
+            <div class="team__content">
+              <h3 class="team__title">
+                Paul Castanie
+              </h3>
+              <p class="team__txt">
+                Product Designer
+              </p>
+            </div>
+          </li>
+
+          <li class="team__item">
+            <img class="team__img" src="images/team/developer.jpg" width="270" height="260"
+              alt="Frontend Developer Joanna Nix">
+            <div class="team__content">
+              <h3 class="team__title">
+                Joanna Nix
+              </h3>
+              <p class="team__txt">
+                Frontend Developer
+              </p>
+            </div>
+          </li>
+
+          <li class="team__item">
+            <img class="team__img" src="images/team/marketing.jpg" width="270" height="260" alt="Marketing Aldo Delara">
+            <div class="team__content">
+              <h3 class="team__title">
+                Aldo Delara
+              </h3>
+              <p class="team__txt">
+                Marketing
+              </p>
+            </div>
+          </li>
+
+          <li class="team__item">
+            <img class="team__img" src="images/team/ui-designer.jpg" width="270" height="260"
+              alt="Product Designer Oladimeji Odunsi">
+            <div class="team__content">
+              <h3 class="team__title">
+                Oladimeji Odunsi
+              </h3>
+              <p class="team__txt">
+                UI Designer
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+
 
       </div>
     </section>
@@ -234,14 +237,14 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="inner">
+      <div class="footer__inner">
         <a class="logo footer__logo focus" href="#">
           <img class="logo__img" src="images/logo-lighgt.svg" width="140" height="25" alt="Logo DolGuldur">
         </a>
         <address class="footer__info">
           <ul class="footer__contacts">
-            <li class="footer__contact">
-              <a class="footer__link-adress focus" href="#">
+            <li class="footer__item">
+              <a class="footer__link footer__link-white focus" href="#">
                 14 Green St., Belmont, Boston. USA
               </a>
             </li>

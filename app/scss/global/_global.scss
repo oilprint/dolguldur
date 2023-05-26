@@ -48,6 +48,7 @@ main {
 }
 
 .focus {
+  
   &:focus {
     outline: solid 1px $accent;
     outline-offset: 4px;
