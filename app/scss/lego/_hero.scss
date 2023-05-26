@@ -3,20 +3,18 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 55vh;
-  
 
-  &__inner {
+  &__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     height: 55vh;
   }
 
   &__content {
-   max-width: 700px;
-   width: 100%;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
   }
 
   &__title {
@@ -24,9 +22,8 @@
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    color: $light;
     text-transform: uppercase;
-    text-align: center;
+    color: $light;
     margin-bottom: 30px;
   }
 }

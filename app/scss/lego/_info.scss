@@ -1,20 +1,13 @@
 .info {
-  border-color: $light;
-
-  &__list {
+   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 
   &__item {
-    max-width: 270px;
-    width: 100%;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    width: calc((100% - 3 * 30px) / 4);
   }
-
 
   &__title {
     font-size: 14px;

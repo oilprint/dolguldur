@@ -1,12 +1,10 @@
-@import 'fonts';
-@import 'reset';
+@import 'global/reset';
 @import 'libs';
 
 @import 'vars';
-@import 'global';
+@import 'global/global';
+@import 'global/ints';
 
-
-@import 'lego/button';
 @import 'lego/team-card';
 @import 'lego/header';
 @import 'lego/hero';

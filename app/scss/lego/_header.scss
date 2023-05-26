@@ -3,26 +3,25 @@
   background-color: $light;
   border-bottom: 1px solid $grey-light;
 
-  &__inner {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__menu {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 570px;
-    width: 100%;
+  }
+
+  &__logo {
+    margin-right: 89px;
   }
 
   &__list {
     display: flex;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 42px;
+    gap: 42px;
   }
 
   &__link {
@@ -53,6 +52,7 @@
 
     &.current {
       color: $accent;
+
       &::after {
         width: 100%;
       }
@@ -60,16 +60,21 @@
 
     &:hover {
       color: $accent;
+
       &::after {
         width: 100%;
       }
+
     }
+
     &:focus {
       outline: solid 1px $accent;
       border-radius: 4px;
     }
+
     &:active {
       color: rgba($primary, 0.5);
+
       &::after {
         width: 0;
       }
@@ -77,10 +82,6 @@
   }
 
   &__info {
-    font-style: normal;
-  }
-
-  &__contacts {
     display: flex;
     justify-content: space-between;
   }
@@ -89,28 +90,26 @@
     margin-right: 45px;
   }
 
-  &__contact-link {
+  &__contact {
     display: flex;
     align-items: center;
     color: $secondary;
     transition: color 0.4s;
+    margin-left: auto;
+
     &:hover {
       color: $accent;
-      .header__contact-icon {
-        fill: $accent;
-      }
     }
+
     &:active {
       color: rgba($accent, 0.7);
-      .header__contact-icon {
-      fill: rgba($accent, 0.7);
-       }
     }
   }
 
   &__contact-icon {
-    fill: $secondary;
+    fill: currentColor;
     margin-right: 10px;
     transition: fill 0.4s;
   }
+
 }

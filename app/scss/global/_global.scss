@@ -19,15 +19,8 @@ main {
   flex-grow: 1;
 }
 
-.logo {
-  display: block;
-  width: fit-content;
-  transition: outline 0.4s;
-}
-
 .container {
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -55,7 +48,6 @@ main {
 }
 
 .focus {
-  transition: color 0.4s, outline 0.4s;
   &:focus {
     outline: solid 1px $accent;
     outline-offset: 4px;
