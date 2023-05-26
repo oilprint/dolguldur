@@ -5,8 +5,40 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
-  &__item:not(:last-child) {
-    margin-right: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $light;
+    width: calc((100% - 3 * 30px) / 4);
+    box-shadow: 2px 3px 3px rgba($dark, 0.3);
   }
+
+  &__content {
+    padding: 30px 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__title {
+    color: $grey-dark;
+    margin-bottom: 10px;
+  }
+
+  &__txt {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: $secondary;
+  }
+
+
 }

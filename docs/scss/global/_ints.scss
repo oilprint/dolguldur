@@ -1,4 +1,11 @@
+.logo {
+  display: block;
+  width: fit-content;
+  transition: outline 0.4s;
+}
+
 .button {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -7,14 +14,16 @@
   background-color: $accent;
   color: $light;
   transition: box-shadow 0.4s, outline 0.4s;
-  
+
   &:hover {
     box-shadow: 3px 3px 8px rgba($dark, 0.4);
   }
+
   &:focus {
     outline: solid 1px $accent;
     outline-offset: 4px;
   }
+
   &:active {
     box-shadow: inset 3px 3px 8px rgba($dark, 0.4);
   }

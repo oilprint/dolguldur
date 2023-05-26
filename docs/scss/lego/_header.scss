@@ -3,18 +3,20 @@
   background-color: $light;
   border-bottom: 1px solid $grey-light;
 
-  &__inner {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  &__logo {
+    margin-right: 89px;
+  }
+
   &__menu {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 570px;
-    width: 100%;
   }
 
   &__list {
@@ -29,58 +31,57 @@
     display: inline-block;
     padding: 24px 4px;
     color: $primary;
-    transition: color 0.5s;
     position: relative;
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.3;
+    transition: color 0.5s;
 
     &::after {
       position: absolute;
-      display: block;
       content: "";
-      margin: auto;
-      width: 0;
+      width: 100%;
       height: 4px;
-      left: 0;
-      right: 0;
       bottom: -5px;
+      left: 0;
       background-color: $accent;
       border-radius: 2px;
-      transition: width 0.5s;
+      transform: scaleX(0);
+      transition: outline 0.4s, transform 0.5s;
     }
 
     &.current {
       color: $accent;
+
       &::after {
-        width: 100%;
+        transform: scaleX(1);
       }
     }
 
     &:hover {
       color: $accent;
+
       &::after {
-        width: 100%;
+        transform: scaleX(1);
       }
     }
+
     &:focus {
       outline: solid 1px $accent;
       border-radius: 4px;
     }
+
     &:active {
       color: rgba($primary, 0.5);
+
       &::after {
-        width: 0;
+        transform: scaleX(0);
       }
     }
   }
 
   &__info {
-    font-style: normal;
-  }
-
-  &__contacts {
     display: flex;
     justify-content: space-between;
   }
@@ -89,28 +90,27 @@
     margin-right: 45px;
   }
 
-  &__contact-link {
+  &__contact {
     display: flex;
     align-items: center;
     color: $secondary;
     transition: color 0.4s;
+    margin-left: auto;
+    transition: outline 0.4s, color 0.4s;
+
     &:hover {
       color: $accent;
-      .header__contact-icon {
-        fill: $accent;
-      }
     }
+
     &:active {
       color: rgba($accent, 0.7);
-      .header__contact-icon {
-      fill: rgba($accent, 0.7);
-       }
     }
   }
 
   &__contact-icon {
-    fill: $secondary;
+    fill: currentColor;
     margin-right: 10px;
     transition: fill 0.4s;
   }
+
 }
