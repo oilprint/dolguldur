@@ -28,9 +28,8 @@
     }
   }
 
-  &__link-white {
+  &__link--white {
     color: $light;
-    transition: outline 0.4s, color 0.4s, opacity 0.4s;
 
     &:hover {
       color: $accent;
