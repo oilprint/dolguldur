@@ -19,25 +19,16 @@
     color: $accent-second;
     transition: outline 0.4s, color 0.4s, opacity 0.4s;
 
+    &--white {
+      color: $light;
+    }
+
     &:hover {
       color: $accent;
     }
 
     &:active {
       color: rgba($accent-second, 0.6);
-    }
-  }
-
-  &__link-white {
-    color: $light;
-    transition: outline 0.4s, color 0.4s, opacity 0.4s;
-
-    &:hover {
-      color: $accent;
-    }
-
-    &:active {
-      color: rgba($light, 0.6);
     }
   }
 }
