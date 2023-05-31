@@ -1,0 +1,232 @@
+.hero {
+  position: relative;
+  line-height: 0;
+  &__slider {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($dark, 0.6);
+    }
+  }
+
+  &__img {
+    height: 55vh;
+    object-fit: cover;
+  }
+
+  &__container {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+
+    // background-color: $primary;
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: cover;
+  }
+
+  &__content {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light;
+    margin-bottom: 30px;
+  }
+}
+
+.adv {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 3 * 30px) / 4);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 70px;
+      border: 1px solid $secondary;
+      border-radius: 4px;
+      padding: 60px 0;
+      margin: 0 auto 30px;
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+      background-position: center;
+    }
+
+    &--team::before {
+      background-image: url('../images/icons/icon-team.svg');
+    }
+
+    &--punctuality::before {
+      background-image: url('../images/icons/icon-punctuality.svg');
+    }
+
+    &--planning::before {
+      background-image: url('../images/icons/icon-planning.svg');
+    }
+
+    &--innovation::before {
+      background-image: url('../images/icons/icon-innovation.svg');
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $grey-dark;
+    margin-bottom: 9px;
+  }
+}
+
+.services {
+  text-align: center;
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  &__content {
+    background-color: rgba($dark, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 26px 15px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
+.team {
+  text-align: center;
+  background-color: $bg;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: $light;
+    width: calc((100% - 3 * 30px) / 4);
+    box-shadow: 2px 3px 3px rgba($dark, 0.3);
+  }
+
+  &__content {
+    padding: 30px 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__img {
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    color: $grey-dark;
+    margin-bottom: 10px;
+  }
+
+  &__txt {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: $secondary;
+  }
+}
+
+.partners {
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 16px;
+    border: 1px solid $secondary;
+    border-radius: 4px;
+    transition: border-color 0.4s, opacity 0.4s;
+
+    &:hover {
+      border-color: $accent;
+
+      .partners__logo {
+        fill: $accent;
+      }
+    }
+
+    &:active {
+      opacity: 0.7;
+
+    }
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    fill: $secondary;
+  }
+}
