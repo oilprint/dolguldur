@@ -1,16 +1,12 @@
 @import 'global/reset';
 @import 'libs';
 
-@import 'vars';
+@import 'global/vars';
 @import 'global/global';
 @import 'global/ints';
 
 @import 'lego/header';
-@import 'lego/hero';
-@import 'lego/info';
-@import 'lego/services';
-@import 'lego/team';
-@import 'lego/footer';
-
+@import 'lego/index';
 @import 'lego/works';
+@import 'lego/footer';
 
