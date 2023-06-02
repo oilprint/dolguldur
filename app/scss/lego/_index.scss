@@ -1,27 +1,9 @@
 .hero {
   position: relative;
   line-height: 0;
-  &__slider {
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba($dark, 0.6);
-    }
-  }
-
-  &__img {
-    height: 55vh;
-    object-fit: cover;
-  }
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 
   &__container {
     content: '';
@@ -35,11 +17,7 @@
     align-items: center;
     left: 50%;
     transform: translate(-50%);
-
-    // background-color: $primary;
-    // background-repeat: no-repeat;
-    // background-position: top center;
-    // background-size: cover;
+    z-index: 10;
   }
 
   &__content {
@@ -56,6 +34,26 @@
     text-transform: uppercase;
     color: $light;
     margin-bottom: 30px;
+  }
+
+  &__slide {
+    margin: 0 auto;
+    height: 55vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($dark, 0.6);
+    }
   }
 }
 
@@ -168,6 +166,7 @@
     padding: 30px 10px;
     font-size: 16px;
     line-height: 1.2;
+    margin: 0 auto;
   }
 
   &__img {
@@ -184,6 +183,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: $secondary;
+    margin-bottom: 16px;
   }
 }
 
@@ -230,3 +230,59 @@
     fill: $secondary;
   }
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 206px;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s,
+    box-shadow 0.4s, outline 0.4s;
+    &--white {
+      background-color: rgba($light, 0.1);
+      .social__icon {
+        fill: $light;
+      }
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+    }
+
+     &:hover {
+       background-color: $accent;
+
+       .social__icon {
+         fill: $grey-light;
+         transition: 0.4s;
+       }
+     }
+
+     &:active {
+       box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
+     }
+  }
+
+  &__icon {
+    fill: $secondary;
+  }
+
+  
+}
+
+ 

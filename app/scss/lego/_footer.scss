@@ -2,6 +2,16 @@
   background-color: $primary;
   padding: 64px 0 60px;
 
+  &__inner {
+    display: flex;
+  }
+
+  &__contacts {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
   &__logo {
     margin-bottom: 22px;
   }
@@ -31,4 +41,17 @@
       color: rgba($accent-second, 0.6);
     }
   }
+
+  &__social-links {
+    padding-top: 8px;
+  }
+
+  &__subtitle {
+    line-height: 1.2;
+    color: $light;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+
+
 }
