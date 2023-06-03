@@ -20,7 +20,7 @@ main {
 }
 
 .container {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,7 +48,7 @@ main {
 }
 
 .focus {
-  
+
   &:focus {
     outline: solid 1px $accent;
     outline-offset: 4px;
@@ -56,5 +56,54 @@ main {
   }
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
 
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s, box-shadow 0.4s, outline 0.4s;
+
+    &--white {
+      background-color: rgba($light, 0.1);
+
+      .social__icon {
+        fill: $light;
+      }
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+    }
+
+    &:hover {
+      background-color: $accent;
+
+      .social__icon {
+        fill: $grey-light;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
+    }
+  }
+
+  &__icon {
+    fill: $secondary;
+    transition: fill 0.4s;
+  }
+}
