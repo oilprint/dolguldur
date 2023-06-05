@@ -6,7 +6,6 @@
   margin: 0 auto;
 
   &__container {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -208,7 +207,7 @@
     padding: 16px 16px;
     border: 1px solid $secondary;
     border-radius: 4px;
-    transition: border-color 0.4s, opacity 0.4s;
+    transition: border-color 0.4s, opacity 0.4s, outline 0.4s;
 
     &:hover {
       border-color: $accent;
@@ -231,58 +230,5 @@
   }
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 206px;
-
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  &__link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.4s,
-    box-shadow 0.4s, outline 0.4s;
-    &--white {
-      background-color: rgba($light, 0.1);
-      .social__icon {
-        fill: $light;
-      }
-    }
-
-    &:focus {
-      outline: solid 1px $accent;
-      outline-offset: 4px;
-    }
-
-     &:hover {
-       background-color: $accent;
-
-       .social__icon {
-         fill: $grey-light;
-         transition: 0.4s;
-       }
-     }
-
-     &:active {
-       box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
-     }
-  }
-
-  &__icon {
-    fill: $secondary;
-  }
-
-  
-}
 
  
