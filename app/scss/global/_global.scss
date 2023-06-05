@@ -47,20 +47,11 @@ main {
   margin-bottom: 49px;
 }
 
-.focus {
-
-  &:focus {
-    outline: solid 1px $accent;
-    outline-offset: 4px;
-    border-radius: 4px;
-  }
-}
 
 .social {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 
   &__item:not(:last-child) {
     margin-right: 10px;

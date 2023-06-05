@@ -10,7 +10,7 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
-  
+
   var mixer = mixitup('.works__content');
 
 });

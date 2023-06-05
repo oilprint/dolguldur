@@ -207,7 +207,7 @@
     padding: 16px 16px;
     border: 1px solid $secondary;
     border-radius: 4px;
-    transition: border-color 0.4s, opacity 0.4s;
+    transition: border-color 0.4s, opacity 0.4s, outline 0.4s;
 
     &:hover {
       border-color: $accent;
