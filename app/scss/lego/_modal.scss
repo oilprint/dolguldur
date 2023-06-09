@@ -13,6 +13,7 @@
   &.hidden {
     opacity: 0;
     pointer-events: none;
+
     .modal {
       transform: scale(0);
     }
@@ -50,6 +51,7 @@
     }
 
     &:hover {
+      
       .modal__icon {
         fill: $accent;
       }
