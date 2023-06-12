@@ -38,7 +38,8 @@
     }
 
     &:active {
-      color: rgba($accent-second, 0.6);
+      opacity:0.6;
+      color: $accent-second;
     }
   }
 

@@ -90,6 +90,11 @@ main {
 
     &:active {
       box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
+      background-color: $accent;
+
+      .social__icon {
+        fill: $light;
+      }
     }
   }
 

@@ -35,6 +35,7 @@
     &:active {
       background-color: $accent;
       box-shadow: inset 3px 3px 8px rgba($primary, 0.4);
+      color: $light;
     }
   }
 
@@ -81,7 +82,7 @@
     align-items: center;
     font-size: 18px;
     line-height: 1.5;
-    transform: translateY(300%);
+    transform: translateY(101%);
     transition: transform 0.8s;
   }
 
