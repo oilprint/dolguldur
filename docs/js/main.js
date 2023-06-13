@@ -1,15 +1,15 @@
 $(function () {
 
-  $('.hero__slider').slick({
-    infinite: true,
-    speed: 1000,
-    fade: true,
-    arrows: false,
-    cssEase: 'linear',
-    autoplay: true, 
-    autoplaySpeed: 2000,
-  });
 
+  const swiper = new Swiper('.swiper', {
+    
+    slidesPerView: 1,
+    autoplay: {
+      delay: 2000,
+    },
+    loop: true,
+
+  });
 
   var mixer = mixitup('.works__content');
 

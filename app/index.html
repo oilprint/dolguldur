@@ -15,7 +15,7 @@
   <link rel="icon" href="favicon/favicon.ico" sizes="any">
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
-  
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -82,39 +82,95 @@
         </div>
       </div>
 
-      <div class="hero__slider">
+      <div class="hero__swiper swiper">
 
-        <div class="hero__slide" style="background-image: url(./images/decor/slider-1.jpg);">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-1.jpg);">
+
+          </div>
+
+          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-2.jpg);">
+
+          </div>
+
+          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-3.jpg);">
+
+          </div>
 
         </div>
+        <div class="swiper-pagination"></div>
 
-        <div class="hero__slide" style="background-image: url(./images/decor/slider-2.jpg);">
-
-        </div>
-
-        <div class="hero__slide" style="background-image: url(./images/decor/slider-3.jpg);">
-
-        </div>
       </div>
-
-      <div class="backdrop hidden" data-modal>
-        <div class="modal">
-          <button class="modal__btn" type="button" data-modal-close>
-            <svg class="modal__icon" width="32" height="32">
-              <use href="images/symbol-defs.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-
     </section>
+    <div class="backdrop hidden" data-modal>
+      <div class="modal">
 
+        <div class="modal__inner">
+
+          <p class="modal__text">
+            Tell about yourself and we will contact you
+          </p>
+          <form class="form" action="#">
+
+            <label class="form__label" for="user">
+              Name
+              <input class="form__input" id="user" type="text" required>
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </label>
+
+            <label class="form__label" for="phone">
+              Phone
+              <input class="form__input" id="phone" type="tel" required>
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </label>
+
+            <label class="form__label" for="mail">
+              E-mail
+              <input class="form__input" id="mail" type="email" required>
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </label>
+
+            <label class="form__label form__label--textarea" for="text">
+              Message
+              <textarea class="form__input" id="text" placeholder="Your message..." required></textarea>
+            </label>
+
+            <label class="form__label" for="check">
+              <input class="form__checkbox" type="checkbox" id="check" required>
+              <span class="form__checkbox-custom"></span>
+              I agree to the subscription and accept the
+              <a class="form__link focus" href="#">
+                Terms of use
+              </a>
+            </label>
+            <button class="button form__button focus" type="submit">
+              Submit
+            </button>
+
+          </form>
+
+        </div>
+
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg class="modal__icon" width="32" height="32">
+            <use href="images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <section class="adv section">
       <h2 class="sr-only">
         Effective team
       </h2>
+
       <div class="container">
         <ul class="adv__list">
           <li class="adv__item adv__item--team">
@@ -153,8 +209,6 @@
 
       </div>
     </section>
-
-    </div>
 
     <section class="services section">
       <div class="container">
@@ -353,7 +407,7 @@
                 UI Designer
               </p>
               <ul class="social">
-              
+
                 <li class="social__item">
                   <a class="social__link" href="#">
                     <svg class="social__icon" width="20" height="20">

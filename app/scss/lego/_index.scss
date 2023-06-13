@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  line-height: 0;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -35,7 +34,7 @@
     margin-bottom: 30px;
   }
 
-  &__slide {
+  &__swiper-slide {
     margin: 0 auto;
     height: 55vh;
     width: 100%;

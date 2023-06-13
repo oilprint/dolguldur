@@ -18,7 +18,7 @@ $(function () {
   });
 
 
-  modal.querySelector('.modal__window').addEventListener('click', function (e) {
+  modal.querySelector('.modal').addEventListener('click', function (e) {
     e.stopPropagation();
   });
 
