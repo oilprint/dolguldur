@@ -44,15 +44,20 @@
   }
 
   &__social-links {
-    padding-top: 8px;
+    margin-right: 40px;
   }
 
   &__subtitle {
+    padding-top: 8px;
     line-height: 1.2;
     color: $light;
     text-transform: uppercase;
     margin-bottom: 19px;
   }
 
-
+  &__subscribe {
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+  }
 }
