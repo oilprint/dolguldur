@@ -24,7 +24,8 @@
     <div class="container header__container">
 
       <nav class="header__menu">
-        <a class="logo header__logo focus" href="#">
+        <a class="logo logo--black header__logo" href="#">
+          <img class="logo__icon" src="images/logo-icon.svg" width="30" height="30" alt="Logo DolGuldur">
           <img class="logo__img" src="images/logo.svg" width="189" height="36" alt="Logo DolGuldur">
         </a>
         <ul class="header__list">
@@ -102,69 +103,79 @@
         <div class="swiper-pagination"></div>
 
       </div>
-    </section>
-    <div class="backdrop hidden" data-modal>
-      <div class="modal">
 
-        <div class="modal__inner">
+      <div class="backdrop hidden" data-modal>
+        <div class="modal">
 
-          <p class="modal__text">
+          <h2 class="modal__title">
             Tell about yourself and we will contact you
-          </p>
+          </h2>
           <form class="form" action="#">
 
             <label class="form__label" for="user">
               Name
-              <input class="form__input" id="user" type="text" required>
+            </label>
+            <div class="form__input-wrapper">
+              <input class="form__input" id="user" type="text" name="name" required>
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-name"></use>
               </svg>
-            </label>
+            </div>
 
             <label class="form__label" for="phone">
               Phone
-              <input class="form__input" id="phone" type="tel" required>
+            </label>
+            <div class="form__input-wrapper">
+              <input class="form__input" id="phone" type="tel" name="phone" required>
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
-            </label>
-
+            </div>
             <label class="form__label" for="mail">
               E-mail
-              <input class="form__input" id="mail" type="email" required>
+            </label>
+            <div class="form__input-wrapper">
+              <input class="form__input" id="mail" type="email" name="email" required>
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
-            </label>
-
+            </div>
             <label class="form__label form__label--textarea" for="text">
               Message
-              <textarea class="form__input" id="text" placeholder="Your message..." required></textarea>
             </label>
+            <textarea class="form__input form__input--textarea" id="text" placeholder="Your message..." name="message"
+              required></textarea>
 
-            <label class="form__label" for="check">
+            <label class="form__label form__label--check" for="check">
               <input class="form__checkbox" type="checkbox" id="check" required>
-              <span class="form__checkbox-custom"></span>
+              <span class="form__fake-checkbox"></span>
               I agree to the subscription and accept the
               <a class="form__link focus" href="#">
                 Terms of use
               </a>
             </label>
+
             <button class="button form__button focus" type="submit">
               Submit
             </button>
 
           </form>
 
+          <button class="modal__btn" type="button" data-modal-close>
+            <svg class="modal__icon" width="32" height="32">
+              <use href="images/symbol-defs.svg#icon-close"></use>
+            </svg>
+            <span class="sr-only">
+              Close this window
+            </span>
+          </button>
         </div>
-
-        <button class="modal__btn" type="button" data-modal-close>
-          <svg class="modal__icon" width="32" height="32">
-            <use href="images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
-    </div>
+
+
+
+    </section>
+
 
     <section class="adv section">
       <h2 class="sr-only">
@@ -535,8 +546,9 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__contacts">
-          <a class="logo footer__logo focus" href="#">
-            <img class="logo__img" src="images/logo-lighgt.svg" width="140" height="25" alt="Logo DolGuldur">
+          <a class="logo logo--white footer__logo" href="#">
+            <img class="logo__icon" src="images/logo-icon.svg" width="25" height="25" alt="Logo DolGuldur">
+            <img class="logo__img" src="images/logo-white.svg" width="100" height="24" alt="Logo DolGuldur">
           </a>
           <address class="footer__info">
             <ul class="footer__contacts">
@@ -560,9 +572,9 @@
         </div>
 
         <div class="footer__social-links">
-          <p class="footer__subtitle">
+          <h2 class="footer__title">
             join
-          </p>
+          </h2>
 
           <ul class="social">
 
@@ -602,12 +614,16 @@
         </div>
 
         <div class="footer__subscribe">
-          <p class="footer__subtitle">
+          <h2 class="footer__title">
             Subscribe
-          </p>
-          <form action="#" class="form form--small">
-            <input class="form__input" type="email" placeholder="E-mail" required>
-            <button class="button button--icon">
+          </h2>
+          <form class="form-subscribe" action="#">
+            <label class="sr-only" for="subscribe-mail">
+              Your email
+            </label>
+            <input class="form-subscribe__input" id="subscribe-mail" type="email" placeholder="E-mail" name="email"
+              required>
+            <button class="button button--icon" type="submit">
               Subscribe
               <svg class="button__icon" width="24" height="24">
                 <use href="images/symbol-defs.svg#icon-button-icon"></use>
