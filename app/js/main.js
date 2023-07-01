@@ -11,6 +11,15 @@ $(function () {
 
   });
 
-  var mixer = mixitup('.works__content');
+  // var mixer = mixitup('.works__content');
+
+  $(function () {
+    if (window.location.pathname === '/works.html') {
+      var mixer = mixitup('.works__content');
+    }
+  });
+
 
 });
+
+  
