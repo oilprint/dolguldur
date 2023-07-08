@@ -1,19 +1,71 @@
 .footer {
   background-color: $primary;
-  padding: 64px 0 60px;
+  padding: 60px 0;
+
+  @media screen and (min-width: $xl) {
+    padding: 64px 0 60px;
+  }
 
   &__inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $xl) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
-  &__contacts {
-    max-width: 270px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-right: 30px;
+
+    @media screen and (min-width: $md) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $xl) {
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+  }
+
+  &__contact-links {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $md) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $xl) {
+      max-width: 270px;
+      width: 100%;
+      margin-right: 30px;
+      text-align: left;
+    }
   }
 
   &__logo {
-    margin-bottom: 22px;
+    margin: 0 auto 22px;
+
+    @media screen and (min-width: $xl) {
+     margin: 0 0 22px;
+    }
+  }
+
+  &__icon {
+    display: block;
+
+    @media screen and (min-width: $xl) {
+      display: none;
+    }
   }
 
   &__info {
@@ -38,40 +90,71 @@
     }
 
     &:active {
-      opacity:0.6;
+      opacity: 0.6;
       color: $accent-second;
     }
   }
 
   &__social-links {
-    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+
+
+    @media screen and (min-width: $md) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $xl) {
+      max-width: 270px;
+      width: 100%;
+      margin-right: 30px;
+      text-align: left;
+    }
   }
 
   &__title {
-    padding-top: 8px;
     line-height: 1.2;
     color: $light;
     text-transform: uppercase;
     margin-bottom: 19px;
+
+    @media screen and (min-width: $xl) {
+      padding-top: 8px;
+    }
   }
 
   &__subscribe {
-    max-width: 570px;
     width: 100%;
-    margin-left: auto;
+    text-align: center;
+
+    @media screen and (min-width: $xl) {
+      max-width: 570px;
+      text-align: left;
+    }
+
   }
 }
 
 .form-subscribe {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: $md) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $xl) {
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+  }
 
   &__input {
     flex-grow: 1;
-    height: 100%;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     background-color: transparent;
     color: $light;
     border: 1px solid rgba($light, 0.3);
@@ -82,17 +165,95 @@
       color: rgba($light, 0.6);
     }
 
-     &:focus {
-       outline: solid 1px $accent;
-       outline-offset: 4px;
-       border-radius: 4px;
-     }
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
 
-     &:hover {
-       &.form-subscribe__input::placeholder {
-         color: $accent;
-       }
-     }
+    &:hover {
+      &.form-subscribe__input::placeholder {
+        color: $accent;
+      }
+    }
+
+    @media screen and (min-width: $xl) {
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__buttom {
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: $md) {
+      width: fit-content;
+    }
+
+    @media screen and (min-width: $xl) {
+      margin: 0;
+    }
+
   }
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $xl) {
+    justify-content: flex-start;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s, box-shadow 0.4s, outline 0.4s;
+
+    &--white {
+      background-color: rgba($light, 0.1);
+
+      .social__icon {
+        fill: $light;
+      }
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+    }
+
+    &:hover {
+      background-color: $accent;
+
+      .social__icon {
+        fill: $grey-light;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
+      background-color: $accent;
+
+      .social__icon {
+        fill: $light;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $secondary;
+    transition: fill 0.4s;
+  }
+}
