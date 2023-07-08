@@ -1,5 +1,11 @@
 $(function () {
 
+  $('.header__burger').on('click', function(){
+  $('.header__burger').toggleClass('active');
+  $('.header__content').toggleClass('active');
+
+});
+
 
   const swiper = new Swiper('.swiper', {
     
