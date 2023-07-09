@@ -19,19 +19,38 @@
   }
 
   &__content {
-    max-width: 700px;
+    max-width: 360px;
     width: 100%;
     text-align: center;
+
+    @media screen and (min-width: $md) {
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: $xl) {
+      max-width: 700px;
+    }
   }
 
   &__title {
-    font-size: 44px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $light;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
+
+    @media screen and (min-width: $md) {
+      margin-bottom: 35px;
+    }
+
+    @media screen and (min-width: $xl) {
+      font-size: 44px;
+      margin-bottom: 30px;
+    }
+
+
   }
 
   &__swiper-slide {
@@ -58,12 +77,27 @@
 .adv {
   &__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+
+    @media screen and (min-width: $md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 576px) and (orientation: landscape) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: $xl) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: calc((100% - 3 * 30px) / 4);
+    width: 100%;
 
     &::before {
       content: "";
@@ -94,6 +128,19 @@
     &--innovation::before {
       background-image: url('../images/icons/icon-innovation.svg');
     }
+
+    @media screen and (min-width: $md) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media (min-width: 576px) and (orientation: landscape) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $xl) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
+
   }
 
   &__title {
@@ -102,6 +149,11 @@
     text-transform: uppercase;
     color: $grey-dark;
     margin-bottom: 9px;
+    text-align: center;
+
+    @media screen and (min-width: $md) {
+      text-align: left;
+    }
   }
 }
 
@@ -229,6 +281,3 @@
     transition: fill 0.4s;
   }
 }
-
-
- 
