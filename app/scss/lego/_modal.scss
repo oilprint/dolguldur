@@ -4,8 +4,10 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 999;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba($black, 0.3);
   backdrop-filter: blur(1px);
   transition: opacity 0.5s;
@@ -22,9 +24,8 @@
 
 .modal {
   position: relative;
-  width: 530px;
   padding: 40px;
-  margin: auto;
+  // margin: auto;
   text-align: center;
   background-color: $light;
   border-radius: 6px;
@@ -73,6 +74,7 @@
   }
 
   &__title {
+    width: 100%;
     margin-bottom: 11px;
     font-size: 20px;
     color: $grey-dark;

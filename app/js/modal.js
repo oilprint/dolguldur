@@ -1,10 +1,11 @@
 $(function () {
 
-  
-  if (window.location.pathname === '/index.html') {
+ 
+ 
       const button = document.querySelector('[data-modal-button]');
-    const modal = document.querySelector('[data-modal]');
-    const buttonClose = document.querySelector('[data-modal-close]');
+      const modal = document.querySelector('[data-modal]');
+      const buttonClose = document.querySelector('[data-modal-close]');
+
 
     button.addEventListener('click', function () {
       modal.classList.remove('hidden');
@@ -23,6 +24,6 @@ $(function () {
     modal.querySelector('.modal').addEventListener('click', function (e) {
       e.stopPropagation();
     });
-  }
+  
  
 });

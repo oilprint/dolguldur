@@ -49,8 +49,6 @@
       font-size: 44px;
       margin-bottom: 30px;
     }
-
-
   }
 
   &__swiper-slide {
@@ -158,38 +156,44 @@
 }
 
 .services {
-  text-align: center;
-  padding-top: 0;
+  display: none;
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  &__item {
-    position: relative;
-    width: calc((100% - 2 * 30px) / 3);
-  }
-
-  &__content {
-    background-color: rgba($dark, 0.6);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 26px 15px;
+  @media screen and (min-width: $xl) {
+    display: block;
     text-align: center;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $light;
+    padding-top: 0;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    &__item {
+      position: relative;
+      width: calc((100% - 2 * 30px) / 3);
+    }
+
+    &__content {
+      background-color: rgba($dark, 0.6);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 26px 15px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $light;
+    }
+
+    &__img {
+      object-fit: cover;
+    }
   }
 
-  &__img {
-    object-fit: cover;
-  }
 }
 
 .team {
@@ -198,6 +202,7 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
   }
@@ -206,10 +211,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
     border-radius: 5px;
     background-color: $light;
-    width: calc((100% - 3 * 30px) / 4);
+    width: calc((100% - 0 * 30px) / 1);
     box-shadow: 2px 3px 3px rgba($dark, 0.3);
+
+    @media (min-width: 576px) and (orientation: landscape) {
+      width: calc((100% - 0 * 30px) / 1);
+    }
+    
+    @media screen and (min-width: $md) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: $xl) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
+
   }
 
   &__content {
@@ -221,7 +240,8 @@
 
   &__img {
     object-fit: cover;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
   }
 
   &__title {
@@ -243,11 +263,24 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
-    width: calc((100% - 5 * 30px) / 6);
+    width: calc((100% - 1 * 30px) / 2);
+
+    @media (min-width: 576px) and (orientation: landscape) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: $md) {
+      width: calc((100% - 2 * 30px) / 3);
+    }
+
+    @media screen and (min-width: $xl) {
+      width: calc((100% - 5 * 30px) / 6);
+    }
   }
 
   &__link {
