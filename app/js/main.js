@@ -1,8 +1,21 @@
-$(function () {
 
-  $('.header__burger').on('click', function(){
-  $('.header__burger').toggleClass('active');
-  $('.header__content').toggleClass('active');
+ document.addEventListener('DOMContentLoaded', () => {
+
+  //Mobile Menu
+  const burger = document.querySelector('.header__burger');
+  const mobileMenu = document.querySelector('.mobile-menu'); 
+  const closeButton = document.querySelector('.mobile-menu__button');
+  const bodyLock = document.querySelector('body'); 
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.add('mobile-menu--active'); 
+    bodyLock.classList.add('lock');
+  });
+
+  closeButton.addEventListener('click', () => {
+    mobileMenu.classList.remove('mobile-menu--active'); 
+    bodyLock.classList.remove('lock');
+  } )
 
 });
 
@@ -20,12 +33,12 @@ $(function () {
   // var mixer = mixitup('.works__content');
 
   $(function () {
+
+  $(function () {
     if (window.location.pathname === '/works.html') {
       var mixer = mixitup('.works__content');
     }
   });
-
-
 });
 
   

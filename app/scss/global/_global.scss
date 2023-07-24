@@ -14,6 +14,10 @@ body {
   color: $secondary;
   background-color: $light;
   overflow-x: hidden;
+  
+  &.lock {
+    overflow-y: hidden;
+  }
 }
 
 main {
