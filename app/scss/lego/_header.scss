@@ -162,7 +162,7 @@
     &:active {
       color: rgba($accent, 0.7);
     }
-    
+
     &:focus {
       outline: solid 1px $accent;
       outline-offset: 4px;
@@ -253,7 +253,6 @@
       padding: 8px 0;
       font-size: 32px;
     }
-
   }
 
   &__contact {
@@ -271,7 +270,7 @@
     display: block;
     padding: 4px 0;
     font-size: 24px;
-    color: $accent;
+    color: $secondary;
 
     &:focus {
       outline: solid 1px $accent;
@@ -279,7 +278,7 @@
     }
 
     &:active {
-      color: rgba($primary, 0.5);
+      color: $accent;
     }
 
     @media (orientation: landscape) {

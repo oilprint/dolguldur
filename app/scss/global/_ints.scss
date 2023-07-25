@@ -1,34 +1,43 @@
-
 .logo {
   display: flex;
   align-items: center;
-  
   transition: opasity 0.4s, outline 0.4s;
 
   &__img {
     width: 116px;
-    
+
     @media (min-width: 1200px) {
       width: 149px;
     }
   }
 
   &--white {
+    justify-content: center;
+
     .logo__icon {
+      display: block;
       margin-right: 15px;
     }
+
+    @media (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &:focus {
+    outline: solid 1px $accent;
+    border-radius: 4px;
   }
 
   &:hover {
     opacity: 0.7;
   }
 
-  &:focus {
-    outline: solid 1px $accent;
-    outline-offset: 4px;
+  &:active {
+    outline: solid 1px $light;
     border-radius: 4px;
   }
-  
+
   &__icon {
     margin-right: 10px;
     display: none;
@@ -100,7 +109,7 @@
   }
 
   &:hover {
-  color: $accent;
+    color: $accent;
 
     .modal-button__icon {
       fill: $accent;

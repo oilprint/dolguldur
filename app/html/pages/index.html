@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Marketing Agency DolGuldur | Home Page</title>
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;700&display=swap"
-   rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet">
 
 
   <link rel="icon" href="favicon/favicon.ico" sizes="any">
@@ -21,486 +21,481 @@
 </head>
 
 <body>
- 
- @@include('../components/header.html', {
- "home": "current"
- })
-  </div>
- 
+  <div class="wrapper">
 
- <main>
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__content">
 
-          <h1 class="hero__title">
-            <span class="sr-only">
-              Digital Marketing Agency DolGuldur
-            </span>
-            author's forge where your sites are created
-          </h1>
-          <button class="button" type="button" data-modal-button>
-            Go to order
-          </button>
-        </div>
-      </div>
 
-      <div class="hero__swiper swiper">
+    @@include('../components/header.html', {
+    "home": "current"
+    })
 
-        <div class="swiper-wrapper">
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
 
-          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-1.jpg);">
-
-          </div>
-
-          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-2.jpg);">
-
-          </div>
-
-          <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-3.jpg);">
-
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-
-      </div>
-
-      <div class="backdrop hidden" data-modal>
-        <div class="modal">
-
-          <h2 class="modal__title">
-            Tell about yourself and we will contact you
-          </h2>
-          <form class="form" action="#">
-
-            <label class="form__label" for="user">
-              Name
-            </label>
-            <div class="form__input-wrapper">
-              <input class="form__input" id="user" type="text" name="name" required>
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-name"></use>
-              </svg>
-            </div>
-
-            <label class="form__label" for="phone">
-              Phone
-            </label>
-            <div class="form__input-wrapper">
-              <input class="form__input" id="phone" type="tel" name="phone" required>
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </div>
-            <label class="form__label" for="mail">
-              E-mail
-            </label>
-            <div class="form__input-wrapper">
-              <input class="form__input" id="mail" type="email" name="email" required>
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </div>
-            <label class="form__label form__label--textarea" for="text">
-              Message
-            </label>
-            <textarea class="form__input form__input--textarea" id="text" placeholder="Your message..." name="message"
-              required></textarea>
-
-            <label class="form__label form__label--check" for="check">
-              <input class="form__checkbox" type="checkbox" id="check" required>
-              <span class="form__fake-checkbox"></span>
-              I agree to the subscription and accept the
-              <a class="form__link focus" href="#">
-                Terms of use
-              </a>
-            </label>
-
-            <button class="button form__button focus" type="submit">
-              Submit
+            <h1 class="hero__title">
+              <span class="sr-only">
+                Digital Marketing Agency DolGuldur
+              </span>
+              author's forge where your sites are created
+            </h1>
+            <button class="button" type="button" data-modal-button>
+              Go to order
             </button>
-
-          </form>
-
-          <button class="modal__btn" type="button" data-modal-close>
-            <svg class="modal__icon" width="32" height="32">
-              <use href="images/symbol-defs.svg#icon-close"></use>
-            </svg>
-            <span class="sr-only">
-              Close this window
-            </span>
-          </button>
+          </div>
         </div>
-      </div>
 
+        <div class="hero__swiper swiper">
 
+          <div class="swiper-wrapper">
 
-    </section>
-
-
-     <section class="adv section">
-      <div class="container">
-        <ul class="adv__list">
-          <li class="adv__item adv__item--team">
-            <h3 class="adv__title">
-              Effective team
-            </h3>
-            <p class="adv__txt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-          </li>
-          <li class="adv__item adv__item--punctuality">
-            <h3 class="adv__title">
-              Punctuality
-            </h3>
-            <p class="adv__txt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-          </li>
-          <li class="adv__item adv__item--planning">
-            <h3 class="adv__title">
-              planning
-            </h3>
-            <p class="adv__txt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-          </li>
-          <li class="adv__item adv__item--innovation">
-            <h3 class="adv__title">
-              innovation
-            </h3>
-            <p class="adv__txt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-   <section class="services section">
-      <div class="container">
-        <h2 class="title">
-          Our services
-        </h2>
-
-        <ul class="services__list">
-          <li class="services__item">
-            <img class="services__img" src="images/decor/desktop.jpg" alt="desktop apps" width="370" height="294">
-            <h3 class="services__content">
-              desktop apps
-            </h3>
-          </li>
-
-          <li class="services__item">
-            <img class="services__img" src="images/decor/mobile.jpg" alt="mobile apps" width="370" height="294">
-            <h3 class="services__content">
-              mobile apps
-            </h3>
-          </li>
-
-          <li class="services__item">
-            <img class="services__img" src="images/decor/modern.jpg" alt="modern design" width="370" height="294">
-            <h3 class="services__content">
-              modern design
-            </h3>
-          </li>
-
-        </ul>
-      </div>
-
-    </section>
-
-    <section class="team section">
-      <div class="container">
-
-        <h2 class="title">
-          Our team
-        </h2>
-
-        <ul class="team__list">
-          <li class="team__item">
-            <img class="team__img" src="images/team/designer.jpg" width="270" height="260"
-              alt="Product Designer Paul Castanie">
-            <div class="team__content">
-              <h3 class="team__title">
-                Paul Castanie
-              </h3>
-              <p class="team__txt">
-                Product Designer
-              </p>
-
-              <ul class="social">
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-
-              </ul>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-1.jpg);">
 
             </div>
-          </li>
 
-          <li class="team__item">
-            <img class="team__img" src="images/team/developer.jpg" width="270" height="260"
-              alt="Frontend Developer Joanna Nix">
-            <div class="team__content">
-              <h3 class="team__title">
-                Joanna Nix
-              </h3>
-              <p class="team__txt">
-                Frontend Developer
-              </p>
-              <ul class="social">
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-2.jpg);">
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-
-              </ul>
             </div>
-          </li>
 
-          <li class="team__item">
-            <img class="team__img" src="images/team/marketing.jpg" width="270" height="260" alt="Marketing Aldo Delara">
-            <div class="team__content">
-              <h3 class="team__title">
-                Aldo Delara
-              </h3>
-              <p class="team__txt">
-                Marketing
-              </p>
-              <ul class="social">
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url(./images/decor/slider-3.jpg);">
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-
-              </ul>
             </div>
-          </li>
 
-          <li class="team__item">
-            <img class="team__img" src="images/team/ui-designer.jpg" width="270" height="260"
-              alt="Product Designer Oladimeji Odunsi">
-            <div class="team__content">
-              <h3 class="team__title">
-                Oladimeji Odunsi
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="backdrop hidden" data-modal>
+          <div class="modal">
+
+            <h2 class="modal__title">
+              Tell about yourself and we will contact you
+            </h2>
+            <form class="form" action="#">
+
+              <label class="form__label" for="user">
+                Name
+              </label>
+              <div class="form__input-wrapper">
+                <input class="form__input" id="user" type="text" name="name" required>
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-name"></use>
+                </svg>
+              </div>
+
+              <label class="form__label" for="phone">
+                Phone
+              </label>
+              <div class="form__input-wrapper">
+                <input class="form__input" id="phone" type="tel" name="phone" required>
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <label class="form__label" for="mail">
+                E-mail
+              </label>
+              <div class="form__input-wrapper">
+                <input class="form__input" id="mail" type="email" name="email" required>
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+              <label class="form__label form__label--textarea" for="text">
+                Message
+              </label>
+              <textarea class="form__input form__input--textarea" id="text" placeholder="Your message..." name="message"
+                required></textarea>
+
+              <label class="form__label form__label--check" for="check">
+                <input class="form__checkbox" type="checkbox" id="check" required>
+                <span class="form__fake-checkbox"></span>
+                <span class="form__checkbox-txt">
+                  I agree to the subscription and accept the
+                  <a class="form__link focus" href="#">
+                    Terms of use
+                  </a>
+                </span>
+
+              </label>
+
+              <button class="button form__button focus" type="submit">
+                Submit
+              </button>
+
+            </form>
+
+            <button class="modal__btn modal-button" type="button" data-modal-close>
+              <svg class="modal-button__icon" width="18" height="18">
+                <use href="images/symbol-defs.svg#icon-close-menu"></use>
+              </svg>
+              <span class="sr-only">
+                Close this window
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="adv section">
+        <div class="container">
+          <ul class="adv__list">
+            <li class="adv__item adv__item--team">
+              <h3 class="adv__title">
+                Effective team
               </h3>
-              <p class="team__txt">
-                UI Designer
+              <p class="adv__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
-              <ul class="social">
+            </li>
+            <li class="adv__item adv__item--punctuality">
+              <h3 class="adv__title">
+                Punctuality
+              </h3>
+              <p class="adv__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </li>
+            <li class="adv__item adv__item--planning">
+              <h3 class="adv__title">
+                planning
+              </h3>
+              <p class="adv__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </li>
+            <li class="adv__item adv__item--innovation">
+              <h3 class="adv__title">
+                innovation
+              </h3>
+              <p class="adv__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              </p>
+            </li>
+          </ul>
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
+        </div>
+      </section>
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
+      <section class="services section">
+        <div class="container">
+          <h2 class="title services__title">
+            Our services
+          </h2>
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
+          <ul class="services__list">
+            <li class="services__item">
+              <img class="services__img" src="images/decor/desktop.jpg" alt="desktop apps" width="370" height="294">
+              <h3 class="services__content">
+                desktop apps
+              </h3>
+            </li>
 
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
+            <li class="services__item">
+              <img class="services__img" src="images/decor/mobile.jpg" alt="mobile apps" width="370" height="294">
+              <h3 class="services__content">
+                mobile apps
+              </h3>
+            </li>
 
-              </ul>
-            </div>
-          </li>
+            <li class="services__item">
+              <img class="services__img" src="images/decor/modern.jpg" alt="modern design" width="370" height="294">
+              <h3 class="services__content">
+                modern design
+              </h3>
+            </li>
 
-        </ul>
-      </div>
-    </section>
+          </ul>
+        </div>
 
-     <section class="partners section">
-      <div class="container">
-        <h2 class="title">
-          Our partners
-        </h2>
-        <ul class="partners__list">
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#rails">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to Rails website
-              </span>
-            </a>
-          </li>
+      </section>
 
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#googlepay">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to googlepay website
-              </span>
-            </a>
-          </li>
+      <section class="team section">
+        <div class="container">
+          <h2 class="title team__title">
+            Our team
+          </h2>
 
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#playstation">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to playstation website
-              </span>
-            </a>
-          </li>
+          <ul class="team__list">
+            <li class="team__item">
+              <img class="team__img" src="images/team/designer.jpg" width="450" height="460"
+                alt="Product Designer Paul Castanie">
+              <div class="team__content">
+                <h3 class="team__headline">
+                  Paul Castanie
+                </h3>
+                <p class="team__txt">
+                  Product Designer
+                </p>
+                <ul class="social">
 
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#applepay">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to applepay website
-              </span>
-            </a>
-          </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#npm">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to npm website
-              </span>
-            </a>
-          </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-          <li class="partners__item">
-            <a class="partners__link focus" href="#" target="_blank">
-              <svg class="partners__logo" width="32" height="32">
-                <use href="./images/symbol-defs.svg#ubereats">
-                </use>
-              </svg>
-              <span class="sr-only">
-                Go to ubereats website
-              </span>
-            </a>
-          </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-        </ul>
-      </div>
-    </section> 
-  </main>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-  @@include('../components/footer.html') 
+                </ul>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <img class="team__img" src="images/team/developer.jpg" width="450" height="460"
+                alt="Frontend Developer Joanna Nix">
+              <div class="team__content">
+                <h3 class="team__headline">
+                  Joanna Nix
+                </h3>
+                <p class="team__txt">
+                  Frontend Developer
+                </p>
+
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="images/team/marketing.jpg" width="450" height="460"
+                alt="Marketing Aldo Delara">
+              <div class="team__content">
+                <h3 class="team__headline">
+                  Aldo Delara
+                </h3>
+                <p class="team__txt">
+                  Marketing
+                </p>
+                <ul class="social">
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="images/team/ui-designer.jpg" width="450" height="460"
+                alt="Product Designer Oladimeji Odunsi">
+              <div class="team__content">
+                <h3 class="team__headline">
+                  Oladimeji Odunsi
+                </h3>
+                <p class="team__txt">
+                  UI Designer
+                </p>
+                <ul class="social">
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="partners section">
+        <div class="container">
+          <h2 class="title partners__title">
+            Our partners
+          </h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#rails">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to Rails website
+                </span>
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#googlepay">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to googlepay website
+                </span>
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#playstation">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to playstation website
+                </span>
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#applepay">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to applepay website
+                </span>
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#npm">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to npm website
+                </span>
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a class="partners__link" href="#" target="_blank">
+                <svg class="partners__logo" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#ubereats">
+                  </use>
+                </svg>
+                <span class="sr-only">
+                  Go to ubereats website
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    @@include('../components/footer.html')
+
+  </div>
 
   <script src="js/main.min.js"></script>
 </body>

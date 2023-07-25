@@ -2,99 +2,61 @@
   background-color: $primary;
   padding: 60px 0;
 
-  @media screen and (min-width: $xl) {
+  @media (min-width: 1200px) {
     padding: 64px 0 60px;
   }
 
   &__inner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 48px;
+    column-gap: 30px;
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       align-items: flex-start;
     }
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-
-    @media (min-width: 576px) and (orientation: landscape) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-
-    @media screen and (min-width: $md) {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
-      margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: $xl) {
-      justify-content: flex-start;
-      margin-bottom: 0;
-    }
-  }
-
-  &__contact-links {
     text-align: center;
-    margin-bottom: 60px;
 
-    @media (min-width: 576px) and (orientation: landscape) {
-      margin-bottom: 60px;
-    }
-    
-    @media screen and (min-width: $md) {
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $xl) {
-      max-width: 270px;
+    &:last-child {
+      max-width: 570px;
       width: 100%;
-      margin-right: 30px;
+    }
+
+    @media (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: 270px;
       text-align: left;
     }
   }
 
   &__logo {
-    margin: 0 auto 22px;
-
-    @media screen and (min-width: $xl) {
-     margin: 0 0 22px;
-    }
-  }
-
-  &__icon {
-    display: block;
-
-    @media screen and (min-width: $xl) {
-      display: none;
-    }
-  }
-
-  &__info {
-    font-style: normal;
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
+    padding: 12px 0;
+    margin-bottom: 10px;
   }
 
   &__link {
+    display: block;
+    padding: 10px 0;
     font-family: 'Roboto', sans-serif;
     color: $accent-second;
     transition: outline 0.4s, color 0.4s, opacity 0.4s;
 
     &--white {
       color: $light;
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      border-radius: 4px;
     }
 
     &:hover {
@@ -105,22 +67,12 @@
       opacity: 0.6;
       color: $accent-second;
     }
-  }
-
-  &__social-links {
-    text-align: center;
-    margin-bottom: 60px;
-
-
-    @media screen and (min-width: $md) {
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $xl) {
-      max-width: 270px;
-      width: 100%;
-      margin-right: 30px;
-      text-align: left;
+    
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
     }
   }
 
@@ -130,39 +82,27 @@
     text-transform: uppercase;
     margin-bottom: 19px;
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       padding-top: 8px;
     }
   }
 
-  &__subscribe {
-    width: 100%;
-    text-align: center;
-
-    @media screen and (min-width: $xl) {
-      max-width: 570px;
-      text-align: left;
-    }
-  }
 }
 
 .form-subscribe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
 
-  @media screen and (min-width: $md) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: $xl) {
-    width: 100%;
+  @media (min-width: 1200px) {
     flex-direction: row;
     align-items: stretch;
   }
 
   &__input {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
     flex-grow: 1;
     padding: 15px 16px;
     margin-bottom: 20px;
@@ -173,6 +113,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     &::placeholder {
+      font-size: 16px;
+      line-height: 1;
       color: rgba($light, 0.6);
     }
 
@@ -188,21 +130,23 @@
       }
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       margin-right: 12px;
       margin-bottom: 0;
     }
   }
 
   &__buttom {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 
     @media screen and (min-width: $md) {
       width: fit-content;
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       margin: 0;
     }
 
@@ -214,7 +158,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $xl) {
+  @media screen and (min-width: 1200px) {
     justify-content: flex-start;
   }
 
@@ -223,13 +167,12 @@
   }
 
   &__link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     transition: background-color 0.4s, box-shadow 0.4s, outline 0.4s;
 
     &--white {
@@ -264,7 +207,7 @@
   }
 
   &__icon {
-    fill: $secondary;
+    fill: $light;
     transition: fill 0.4s;
   }
 }

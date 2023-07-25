@@ -23,11 +23,11 @@
     width: 100%;
     text-align: center;
 
-    @media screen and (min-width: $md) {
+    @media screen and (min-width: 768px) {
       max-width: 400px;
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       max-width: 700px;
     }
   }
@@ -41,11 +41,11 @@
     color: $light;
     margin-bottom: 38px;
 
-    @media screen and (min-width: $md) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 35px;
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       font-size: 44px;
       margin-bottom: 30px;
     }
@@ -75,23 +75,9 @@
 .adv {
   &__list {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
-
-    @media screen and (min-width: $md) {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    @media (min-width: 576px) and (orientation: landscape) {
-      flex-direction: column;
-    }
-
-    @media screen and (min-width: $xl) {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
   }
 
   &__item {
@@ -105,10 +91,14 @@
       border: 1px solid $secondary;
       border-radius: 4px;
       padding: 60px 0;
-      margin: 0 auto 30px;
+      margin: 0 auto 10px;
       background-repeat: no-repeat;
       background-size: 70px 70px;
       background-position: center;
+
+      @media (min-width: 1200px) {
+        margin-bottom: 30px;
+      }
     }
 
     &--team::before {
@@ -127,15 +117,11 @@
       background-image: url('../images/icons/icon-innovation.svg');
     }
 
-    @media screen and (min-width: $md) {
+    @media (min-width: 768px) {
       width: calc((100% - 1 * 30px) / 2);
     }
 
-    @media (min-width: 576px) and (orientation: landscape) {
-      width: 100%;
-    }
-
-    @media screen and (min-width: $xl) {
+    @media (min-width: 1200px) {
       width: calc((100% - 3 * 30px) / 4);
     }
 
@@ -149,7 +135,7 @@
     margin-bottom: 9px;
     text-align: center;
 
-    @media screen and (min-width: $md) {
+    @media screen and (min-width: 768px) {
       text-align: left;
     }
   }
@@ -158,16 +144,21 @@
 .services {
   display: none;
 
-  @media screen and (min-width: $xl) {
+  @media screen and (min-width: 1200px) {
     display: block;
     text-align: center;
     padding-top: 0;
+
+    &__title {
+      margin-bottom: 49px;
+    }
 
     &__list {
       display: flex;
       justify-content: space-between;
       gap: 30px;
     }
+    
 
     &__item {
       position: relative;
@@ -200,10 +191,18 @@
   text-align: center;
   background-color: $bg;
 
+  &__title {
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 49px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
   }
 
@@ -212,23 +211,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    max-width: 450px;
+    width: 100%;
     border-radius: 5px;
     background-color: $light;
-    width: calc((100% - 0 * 30px) / 1);
     box-shadow: 2px 3px 3px rgba($dark, 0.3);
-
-    @media (min-width: 576px) and (orientation: landscape) {
-      width: calc((100% - 0 * 30px) / 1);
-    }
     
-    @media screen and (min-width: $md) {
+    @media screen and (min-width: 576px) {
       width: calc((100% - 1 * 30px) / 2);
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: 1200px) {
       width: calc((100% - 3 * 30px) / 4);
     }
-
   }
 
   &__content {
@@ -244,7 +239,7 @@
     height: auto;
   }
 
-  &__title {
+  &__headline {
     color: $grey-dark;
     margin-bottom: 10px;
   }
@@ -260,6 +255,14 @@
 .partners {
   text-align: center;
 
+  &__title {
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 49px;
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -270,15 +273,11 @@
   &__item {
     width: calc((100% - 1 * 30px) / 2);
 
-    @media (min-width: 576px) and (orientation: landscape) {
-      width: calc((100% - 1 * 30px) / 2);
-    }
-
-    @media screen and (min-width: $md) {
+    @media (min-width: 576px) {
       width: calc((100% - 2 * 30px) / 3);
     }
 
-    @media screen and (min-width: $xl) {
+    @media (min-width: 1200px) {
       width: calc((100% - 5 * 30px) / 6);
     }
   }
@@ -293,6 +292,12 @@
     border-radius: 4px;
     transition: border-color 0.4s, opacity 0.4s, outline 0.4s;
 
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
     &:hover {
       border-color: $accent;
 
@@ -303,7 +308,6 @@
 
     &:active {
       opacity: 0.7;
-
     }
   }
 

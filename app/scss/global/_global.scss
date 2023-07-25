@@ -14,10 +14,16 @@ body {
   color: $secondary;
   background-color: $light;
   overflow-x: hidden;
-  
+
   &.lock {
     overflow-y: hidden;
   }
+}
+
+
+.wrapper {
+   position: relative;
+   overflow-x: hidden;
 }
 
 main {
@@ -34,7 +40,7 @@ main {
 .section {
   padding: 60px 0;
 
-  @media screen and (min-width: $xl) {
+  @media (min-width: 1200px) {
     padding: 94px 0;
   }
 }
@@ -51,8 +57,11 @@ main {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
   color: $grey-dark;
-  margin-bottom: 49px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 36px;
+  }
 }
