@@ -1,4 +1,20 @@
 .works {
+  margin: 61px auto 0;
+
+  @media (min-width: 768px) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    margin-top: 61px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 78px;
+  }
+
+  
+
   &__filter {
     display: flex;
     justify-content: flex-start;
@@ -7,7 +23,7 @@
     row-gap: 15px;
     column-gap: 10px;
 
-    @media screen and (min-width: $md) {
+    @media (min-width: 768px) {
       justify-content: center;
     }
   }
@@ -48,15 +64,18 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
   &__content-item {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $light;
+    max-width: 450px;
+    width: 100%;
+   
 
     &:hover {
       .works__description {
@@ -64,15 +83,17 @@
       }
     }
 
-     @media (min-width: 576px) and (orientation: landscape) {
-       width: 100%;
-     }
+    &:focus {
+      .works__description {
+        transform: translateY(0);
+      }
+    }
 
-     @media screen and (min-width: $md) {
+     @media (min-width: 768px) {
        width: calc((100% - 1 * 30px) / 2);
      }
 
-     @media screen and (min-width: $xl) {
+     @media (min-width: 1200px) {
        width: calc((100% - 2 * 30px) / 3);
      }
   }
@@ -84,8 +105,6 @@
 
    &__img {
      object-fit: cover;
-     width: 100%;
-     height: auto;
    }
 
   &__description {

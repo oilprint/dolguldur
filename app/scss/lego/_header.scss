@@ -2,12 +2,16 @@
   padding: 8px 0;
   background-color: $light;
   border-bottom: 1px solid $grey-light;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
 
   @media (min-width: 768px) {
     padding: 0;
   }
 
-  @media (min-width: 796px) and (orientation: landscape) {
+  @media (min-width: 768px) and (orientation: landscape) {
     padding: 8px 0;
   }
 
@@ -36,7 +40,7 @@
       display: none;
     }
 
-    @media (min-width: 796px) and (orientation: landscape) {
+    @media (min-width: 768px) and (orientation: landscape) {
       display: block;
     }
 
@@ -56,7 +60,7 @@
       display: flex;
     }
 
-    @media (min-width: 796px) and (orientation: landscape) {
+    @media (min-width: 768px) and (orientation: landscape) {
       display: none;
     }
 
@@ -180,11 +184,12 @@
 .mobile-menu {
   position: absolute;
   content: '';
-  z-index: 20;
+  z-index: 120;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -205,7 +210,7 @@
     display: none;
   }
 
-  @media (min-width: 796px) and (orientation: landscape) {
+  @media (min-width: 768px) and (orientation: landscape) {
     display: flex;
   }
 
