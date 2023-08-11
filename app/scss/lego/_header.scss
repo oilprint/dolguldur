@@ -188,11 +188,6 @@
     transform: translateX(0);
   }
 
-  @media (min-width: 480px) {
-    padding: 34px 40px 40px;
-  }
-
-
   &__list {
     width: 88%;
 
@@ -237,7 +232,6 @@
     @media (orientation: landscape) {
       display: flex;
       margin-bottom: 0;
-      margin-left: -20px;
     }
   }
 

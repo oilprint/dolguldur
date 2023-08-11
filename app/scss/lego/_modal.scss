@@ -36,13 +36,6 @@
   scroll-behavior: smooth;
   transition: transform 0.5s;
 
-  // @media (min-width: 480px) and (orientation: landscape) {
-  //   margin: 20px auto;
-  //    overflow-y: scroll;
-  //    scroll-behavior: smooth;
-
-  // }
-
   @media (min-width: 1024px) {
     max-width: 530px;
     margin: auto;
@@ -50,7 +43,6 @@
 
   &__btn {
     position: absolute;
-    content: '';
     top: 8px;
     right: 8px;
     border: 1px solid rgba($black, 0.1);
