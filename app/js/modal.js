@@ -1,6 +1,6 @@
  
-        
-      const button = document.querySelector('[data-modal-button]');
+    if (window.location.pathname === '/index.html') {
+        const button = document.querySelector('[data-modal-button]');
       const modal = document.querySelector('[data-modal]');
       const buttonClose = document.querySelector('[data-modal-close]');
      
@@ -20,6 +20,8 @@
       modal.querySelector('.modal').addEventListener('click', function (e) {
         e.stopPropagation();
       });
+    }
+      
 
 
 

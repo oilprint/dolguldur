@@ -1,19 +1,13 @@
 .works {
   margin: 61px auto 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (orientation: portrait) {
     margin-top: 76px;
   }
 
-  @media (min-width: 768px) and (orientation: landscape) {
-    margin-top: 61px;
+  @media (min-width: 1024px) {
+    margin-top: 76px;
   }
-
-  @media (min-width: 1200px) {
-    margin-top: 78px;
-  }
-
-  
 
   &__filter {
     display: flex;
@@ -66,6 +60,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (min-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 
   &__content-item {

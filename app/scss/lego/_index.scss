@@ -262,10 +262,10 @@
   }
 
   &__item {
-    width: calc((100% - 1 * 30px) / 2);
-
-    @media (min-width: 576px) {
-      width: calc((100% - 2 * 30px) / 3);
+    width: 100%;
+    
+    @media (min-width: 480px) {
+      width: calc((100% - 30px) / 2);
     }
 
     @media (min-width: 1200px) {

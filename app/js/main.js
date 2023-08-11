@@ -1,8 +1,10 @@
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
       //Mobile Menu
     const burger = document.querySelector('.header__burger');
+
+    console.log('test');
     const mobileMenu = document.querySelector('.mobile-menu'); 
     const closeButton = document.querySelector('.mobile-menu__button');
     const bodyLock = document.querySelector('body'); 
@@ -17,7 +19,7 @@
       bodyLock.classList.remove('lock');
     });
 
-  });
+
 
     //swiper
 
@@ -29,14 +31,18 @@
     },
       loop: true,
     });
+    
 
-
-
-  $(function () {
+    $(function () {
       if (window.location.pathname === '/works.html') {
         var mixer = mixitup('.works__content');
       }
-  });
+    });
+
+});
+
+
+  
 
 
 
