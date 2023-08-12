@@ -13,6 +13,21 @@ body {
   letter-spacing: 0.03em;
   color: $secondary;
   background-color: $light;
+  overflow-x: hidden;
+  
+  &.lock {
+    overflow-y: hidden;
+  }
+}
+
+
+.wrapper {
+   position: relative;
+   overflow-x: hidden;
+
+   &.lock {
+     overflow-y: hidden;
+   }
 }
 
 main {
@@ -21,12 +36,17 @@ main {
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .sr-only {
@@ -41,30 +61,35 @@ main {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
   color: $grey-dark;
-  margin-bottom: 49px;
-}
 
+  @media (min-width: 1200px) {
+    margin-bottom: 36px;
+  }
+}
 
 .social {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }
 
   &__link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     transition: background-color 0.4s, box-shadow 0.4s, outline 0.4s;
 
     &--white {
@@ -90,6 +115,11 @@ main {
 
     &:active {
       box-shadow: inset 4px 4px 4px rgba($primary, 0.25);
+      background-color: $accent;
+
+      .social__icon {
+        fill: $light;
+      }
     }
   }
 

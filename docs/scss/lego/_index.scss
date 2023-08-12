@@ -1,43 +1,67 @@
 .hero {
   position: relative;
-  line-height: 0;
   max-width: 1600px;
   width: 100%;
-  margin: 0 auto;
+  margin: 61px auto 0;
+
+  @media (min-width: 768px) and (orientation: portrait) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 76px;
+  }
 
   &__container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 55vh;
+    height: calc(55vh + 61px);
     display: flex;
     justify-content: center;
     align-items: center;
     left: 50%;
     transform: translate(-50%);
     z-index: 10;
+
+    @media (min-width: 768px) and (orientation: portrait) {
+      height: calc(55vh + 76px);
+    }
+
+    @media (min-width: 1024px) {
+      height: calc(55vh + 76px);
+    }
   }
 
   &__content {
-    max-width: 700px;
+    max-width: 400px;
     width: 100%;
     text-align: center;
+
+    @media (min-width: 1200px) {
+      max-width: 700px;
+    }
   }
 
   &__title {
-    font-size: 44px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $light;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
+
+    @media (min-width: 1200px) {
+      font-size: 44px;
+      margin-bottom: 30px;
+    }
   }
 
-  &__slide {
+  &__swiper-slide {
     margin: 0 auto;
-    height: 55vh;
+    height: calc(55vh + 61px);
     width: 100%;
     position: relative;
     background-repeat: no-repeat;
@@ -45,8 +69,8 @@
     background-size: cover;
 
     &::after {
-      content: '';
       position: absolute;
+      content: '';
       top: 0;
       left: 0;
       right: 0;
@@ -60,40 +84,34 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
-    width: calc((100% - 3 * 30px) / 4);
+    width: 100%;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 70px;
-      border: 1px solid $secondary;
-      border-radius: 4px;
-      padding: 60px 0;
-      margin: 0 auto 30px;
-      background-repeat: no-repeat;
-      background-size: 70px 70px;
-      background-position: center;
+    @media (min-width: 480px) {
+      width: calc((100% - 1 * 30px) / 2);
     }
 
-    &--team::before {
-      background-image: url('../images/icons/icon-team.svg');
+    @media (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
     }
+  }
 
-    &--punctuality::before {
-      background-image: url('../images/icons/icon-punctuality.svg');
-    }
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 1px solid $secondary;
+    border-radius: 4px; 
 
-    &--planning::before {
-      background-image: url('../images/icons/icon-planning.svg');
-    }
-
-    &--innovation::before {
-      background-image: url('../images/icons/icon-innovation.svg');
+    @media (min-width: 1200px) {
+      margin-bottom: 30px;
     }
   }
 
@@ -103,41 +121,60 @@
     text-transform: uppercase;
     color: $grey-dark;
     margin-bottom: 9px;
+    text-align: center;
+
+    @media (min-width: 768px) and (orientation: portrait) {
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
   }
 }
 
 .services {
-  text-align: center;
-  padding-top: 0;
+  display: none;
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  &__item {
-    position: relative;
-    width: calc((100% - 2 * 30px) / 3);
-  }
-
-  &__content {
-    background-color: rgba($dark, 0.6);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 26px 15px;
+  @media (min-width: 1200px) {
+    display: block;
     text-align: center;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $light;
-  }
+    padding-top: 0;
 
-  &__img {
-    object-fit: cover;
+    &__title {
+      margin-bottom: 49px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+
+    &__item {
+      position: relative;
+      width: calc((100% - 2 * 30px) / 3);
+    }
+
+    &__content {
+      background-color: rgba($dark, 0.6);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 26px 15px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $light;
+    }
+
+    &__img {
+      object-fit: cover;
+    }
   }
 }
 
@@ -145,9 +182,18 @@
   text-align: center;
   background-color: $bg;
 
+  &__title {
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 49px;
+    }
+  }
+
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
@@ -155,10 +201,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
+    max-width: 450px;
+    width: 100%;
     border-radius: 5px;
     background-color: $light;
-    width: calc((100% - 3 * 30px) / 4);
     box-shadow: 2px 3px 3px rgba($dark, 0.3);
+
+    @media (min-width: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
   }
 
   &__content {
@@ -170,10 +226,11 @@
 
   &__img {
     object-fit: cover;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
   }
 
-  &__title {
+  &__headline {
     color: $grey-dark;
     margin-bottom: 10px;
   }
@@ -189,14 +246,31 @@
 .partners {
   text-align: center;
 
+  &__title {
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 49px;
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
-    width: calc((100% - 5 * 30px) / 6);
+    width: 100%;
+    
+    @media (min-width: 480px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 5 * 30px) / 6);
+    }
   }
 
   &__link {
@@ -209,6 +283,12 @@
     border-radius: 4px;
     transition: border-color 0.4s, opacity 0.4s, outline 0.4s;
 
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
     &:hover {
       border-color: $accent;
 
@@ -219,7 +299,6 @@
 
     &:active {
       opacity: 0.7;
-
     }
   }
 
@@ -227,8 +306,6 @@
     width: 60px;
     height: 60px;
     fill: $secondary;
+    transition: fill 0.4s;
   }
 }
-
-
- 
