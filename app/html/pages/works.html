@@ -20,237 +20,347 @@
 </head>
 
 <body>
- 
 
-    @@include('../components/header.html', {
-    "works": "current"
-    })
 
-    <main>
-      <h1 class="sr-only">
-        Works by DolGuldur Studio
-      </h1>
-      <section class="works section">
-        <div class="container">
-         
-            <ul class="works__filter">
-              <li class="works__item">
-                <button class="works__btn" data-filter="all" type="button">
-                  All
-                </button>
-              </li>
-              <li class="works__item">
-                <button class="works__btn" data-filter=".txt-web" type="button">
-                  Web-sites
-                </button>
-              </li>
-              <li class="works__item">
-                <button class="works__btn" data-filter=".txt-apps" type="button">
-                  Apps
-                </button>
-              </li>
-              <li class="works__item">
-                <button class="works__btn" data-filter=".txt-design" type="button">
-                  Designes
-                </button>
-              </li>
-              <li class="works__item">
-                <button class="works__btn" data-filter=".txt-brand" type="button">
-                  Brands
-                </button>
-              </li>
-            </ul>
+  @@include('../components/header.html', {
+  "works": "current"
+  })
 
-            <ul class="works__content">
+  <main>
+    <h1 class="sr-only">
+      Works by DolGuldur Studio
+    </h1>
+    <section class="works section">
+      <div class="container">
 
-              <li class="works__content-item mix txt-web">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/sofa-world.jpg" alt="Web-site Sofa World" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Sofa World
-                  </h2>
-                  <p class="works__text">
-                    Web-site
-                  </p>
-                </div>
+        <ul class="works__filter">
+          <li class="works__item">
+            <button class="works__btn" data-filter="all" type="button">
+              All
+            </button>
+          </li>
+          <li class="works__item">
+            <button class="works__btn" data-filter=".txt-web" type="button">
+              Web-sites
+            </button>
+          </li>
+          <li class="works__item">
+            <button class="works__btn" data-filter=".txt-apps" type="button">
+              Apps
+            </button>
+          </li>
+          <li class="works__item">
+            <button class="works__btn" data-filter=".txt-design" type="button">
+              Designes
+            </button>
+          </li>
+          <li class="works__item">
+            <button class="works__btn" data-filter=".txt-brand" type="button">
+              Brands
+            </button>
+          </li>
+        </ul>
 
-              </li>
+        <ul class="works__content">
 
-              <li class="works__content-item mix txt-brand">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/moby.jpg" alt="Brand Moby Dick Caffe" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Moby Dick Caffe
-                  </h2>
-                  <p class="works__text">
-                    Brand
-                  </p>
-                </div>
-              </li>
+          <li class="works__content-item mix txt-web">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/sofa-world-desktop.jpg 1x, images/works/sofa-world-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
 
-              <li class="works__content-item mix txt-apps">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/tesla.jpg" alt="App Tesla charger-map" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Tesla charger-map
-                  </h2>
-                  <p class="works__text">
-                    App
-                  </p>
-                </div>
-              </li>
+                <source srcset="images/works/sofa-world-tab.jpg 1x, images/works/sofa-world-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
 
-              <li class="works__content-item mix txt-design">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/bronze.jpg" alt="Design Bronze Sky" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Bronze Sky
-                  </h2>
-                  <p class="works__text">
-                    Design
-                  </p>
-                </div>
-              </li>
+                <source srcset="images/works/sofa-world-mobile.jpg 1x, images/works/sofa-world-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
 
-              <li class="works__content-item mix txt-design">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/cereal.jpg" alt="Design Cereal Travel Magazine"
-                    width="450" height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Cereal Travel Magazine
-                  </h2>
-                  <p class="works__text">
-                    Design
-                  </p>
-                </div>
-              </li>
+                <img class="works__img" src="images/works/sofa-world-mobile.jpg" alt="Web-site Sofa World" width="450"
+                  height="294">
+              </picture>
 
-              <li class="works__content-item mix txt-apps">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/photonium.jpg" alt="AppPhotonium" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Photonium
-                  </h2>
-                  <p class="works__text">
-                    App
-                  </p>
-                </div>
-              </li>
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Sofa World
+              </h2>
+              <p class="works__text">
+                Web-site
+              </p>
+            </div>
 
-              <li class="works__content-item mix txt-brand">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/keep.jpg" alt="Brand Keep Exploring" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Keep Exploring
-                  </h2>
-                  <p class="works__text">
-                    Brand
-                  </p>
-                </div>
-              </li>
+          </li>
 
-              <li class="works__content-item mix txt-design">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/architectural.jpg" alt="Architectural conceptual projects"
-                    width="450" height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Architectural conceptual projects
-                  </h2>
-                  <p class="works__text">
-                    Design
-                  </p>
-                </div>
-              </li>
+          <li class="works__content-item mix txt-brand">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/moby-desktop.jpg 1x, images/works/moby-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
 
-              <li class="works__content-item mix txt-web">
-                <div class="works__top">
-                  <img class="works__img" src="./images/works/buzz.jpg" alt="Web-site Le Buzz food service" width="450"
-                    height="294">
-                  <p class="works__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
-                  </p>
-                </div>
-                <div class="works__info">
-                  <h2 class="works__title">
-                    Le Buzz food service
-                  </h2>
-                  <p class="works__text">
-                    Web-site
-                  </p>
-                </div>
-              </li>
+                <source srcset="images/works/moby-tab.jpg 1x, images/works/moby-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
 
-            </ul>
+                <source srcset="images/works/moby-mobile.jpg 1x, images/works/moby-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
 
-        </div>
-      </section>
-    </main>
+                <img class="works__img" src="images/works/moby-mobile.jpg" alt="Brand Moby Dick Caffe" width="450"
+                  height="294">
+              </picture>
 
-    @@include('../components/footer.html')
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Moby Dick Caffe
+              </h2>
+              <p class="works__text">
+                Brand
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-apps">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/tesla-desktop.jpg 1x, images/works/tesla-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/tesla-tab.jpg 1x, images/works/tesla-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/tesla-mobile.jpg 1x, images/works/tesla-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/tesla-mobile.jpg" alt="App Tesla charger-map" width="450"
+                  height="294">
+              </picture>
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Tesla charger-map
+              </h2>
+              <p class="works__text">
+                App
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-design">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/bronze-desktop.jpg 1x, images/works/bronze-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/bronze-tab.jpg 1x, images/works/bronze-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/bronze-mobile.jpg 1x, images/works/bronze-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/bronze-mobile.jpg" alt="Design Bronze Sky" width="450"
+                  height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Bronze Sky
+              </h2>
+              <p class="works__text">
+                Design
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-design">
+            <div class="works__top">
+
+              <picture>
+                <source srcset="images/works/cereal-desktop.jpg 1x, images/works/cereal-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/cereal-tab.jpg 1x, images/works/cereal-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/cereal-mobile.jpg 1x, images/works/cereal-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/cereal-mobile.jpg" alt="Design Cereal Travel Magazine"
+                  width="450" height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Cereal Travel Magazine
+              </h2>
+              <p class="works__text">
+                Design
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-apps">
+            <div class="works__top">
+
+              <picture>
+                <source srcset="images/works/photonium-desktop.jpg 1x, images/works/photonium-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/photonium-tab.jpg 1x, images/works/photonium-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/photonium-mobile.jpg 1x, images/works/photonium-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/photonium-mobile.jpg" alt="AppPhotonium" width="450"
+                  height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Photonium
+              </h2>
+              <p class="works__text">
+                App
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-brand">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/keep-desktop.jpg 1x, images/works/keep-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/keep-tab.jpg 1x, images/works/keep-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/keep-mobile.jpg 1x, images/works/keep-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/keep-mobile.jpg" alt="Brand Keep Exploring" width="450"
+                  height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Keep Exploring
+              </h2>
+              <p class="works__text">
+                Brand
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-design">
+            <div class="works__top">
+              <picture>
+                <source srcset="images/works/architectural-desktop.jpg 1x, images/works/architectural-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/architectural-tab.jpg 1x, images/works/architectural-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/architectural-mobile.jpg 1x, images/works/architectural-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/architectural-mobile.jpg"
+                  alt="Architectural conceptual projects" width="450" height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Architectural conceptual projects
+              </h2>
+              <p class="works__text">
+                Design
+              </p>
+            </div>
+          </li>
+
+          <li class="works__content-item mix txt-web">
+            <div class="works__top">
+
+              <picture>
+                <source srcset="images/works/food-desktop.jpg 1x, images/works/food-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                <source srcset="images/works/food-tab.jpg 1x, images/works/food-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                <source srcset="images/works/food-mobile.jpg 1x, images/works/food-mobile-2x.jpg 2x"
+                  media="(min-width: 375px)">
+
+                <img class="works__img" src="images/works/food-mobile.jpg" alt="Web-site Le Buzz food service"
+                  width="450" height="294">
+              </picture>
+
+              <p class="works__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.
+              </p>
+            </div>
+            <div class="works__info">
+              <h2 class="works__title">
+                Le Buzz food service
+              </h2>
+              <p class="works__text">
+                Web-site
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+  </main>
+
+  @@include('../components/footer.html')
 
 
   <script src="js/main.min.js"></script>
