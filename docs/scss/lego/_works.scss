@@ -34,7 +34,7 @@
     font-size: 16px;
     line-height: 1;
     transition: background-color 0.4s,
-    box-shadow 0.4s, outline 0.4s;
+      box-shadow 0.4s, outline 0.4s;
 
     &:hover,
     &.mixitup-control-active {
@@ -60,10 +60,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-
-    @media (min-width: 768px) {
-      justify-content: flex-start;
-    }
   }
 
   &__content-item {
@@ -73,7 +69,7 @@
     background-color: $light;
     max-width: 450px;
     width: 100%;
-   
+
 
     &:hover {
       .works__description {
@@ -87,13 +83,13 @@
       }
     }
 
-     @media (min-width: 768px) {
-       width: calc((100% - 1 * 30px) / 2);
-     }
+    @media (min-width: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
 
-     @media (min-width: 1200px) {
-       width: calc((100% - 2 * 30px) / 3);
-     }
+    @media (min-width: 1200px) {
+      width: calc((100% - 2 * 30px) / 3);
+    }
   }
 
   &__top {
@@ -101,9 +97,10 @@
     overflow: hidden;
   }
 
-   &__img {
-     object-fit: cover;
-   }
+  &__img {
+    object-fit: cover;
+    height: auto;
+  }
 
   &__description {
     content: "";
@@ -117,10 +114,14 @@
     padding: 24px 24px;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     transform: translateY(101%);
     transition: transform 0.8s;
+
+    @media (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   &__info {
@@ -144,4 +145,3 @@
     line-height: 1.9;
   }
 }
-
