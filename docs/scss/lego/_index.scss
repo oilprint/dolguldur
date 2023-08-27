@@ -68,6 +68,96 @@
     background-position: center;
     background-size: cover;
 
+    &--1 {
+      background-image: url('../images/decor/slider/slider-1-mobile.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/decor/slider/slider-1-mobile-2x.jpg');
+      }
+
+      @media (min-width:576px) {
+        background-image: url('../images/decor/slider/slider-1-tab.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-1-tab-2x.jpg');
+        }
+      }
+
+      @media (min-width:1200px) {
+        background-image: url('../images/decor/slider/slider-1-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-1-desktop-2x.jpg');
+        }
+      }
+    }
+
+    &--2 {
+      background-image: url('../images/decor/slider/slider-2-mobile.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/decor/slider/slider-2-mobile-2x.jpg');
+      }
+
+      @media (min-width:576px) {
+        background-image: url('../images/decor/slider/slider-2-tab.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-2-tab-2x.jpg');
+        }
+      }
+
+      @media (min-width:1200px) {
+        background-image: url('../images/decor/slider/slider-2-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-2-desktop-2x.jpg');
+        }
+      }
+    }
+
+    &--3 {
+      background-image: url('../images/decor/slider/slider-3-mobile.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/decor/slider/slider-3-mobile-2x.jpg');
+      }
+
+      @media (min-width:576px) {
+        background-image: url('../images/decor/slider/slider-3-tab.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-3-tab-2x.jpg');
+        }
+      }
+
+      @media (min-width:1200px) {
+        background-image: url('../images/decor/slider/slider-3-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/decor/slider/slider-3-desktop-2x.jpg');
+        }
+      }
+    }
+
     &::after {
       position: absolute;
       content: '';
@@ -108,7 +198,7 @@
     height: 120px;
     margin-bottom: 10px;
     border: 1px solid $secondary;
-    border-radius: 4px; 
+    border-radius: 4px;
 
     @media (min-width: 1200px) {
       margin-bottom: 30px;
@@ -263,7 +353,7 @@
 
   &__item {
     width: 100%;
-    
+
     @media (min-width: 480px) {
       width: calc((100% - 30px) / 2);
     }
