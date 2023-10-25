@@ -2,7 +2,7 @@
 <img src="https://github.com/oilprint/dolguldur/blob/main/dolguldur-cover.jpg" target="_blank" align="center" style="width: 100%" />
 </div>  
 
-# [website](https://oilprint.github.io/dolguldur/)
+# [go to dolguldur](https://oilprint.github.io/dolguldur/)
 
 🚀 Hello there! This is the GitHub repository for the website of a marketing agency Dolguldur. 
 
